@@ -14,7 +14,9 @@ See that guide for additional information.
 => download iam aws authenticator, CLI, kubectl before kubeconfig configuration.
 
 5. terraform output kubeconfig > ~/.kube/config
+
 ================================================
+
 1. Install the AWS CLI on Linux
 
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
