@@ -11,7 +11,9 @@ See that guide for additional information.
 
 => now i am going to redirect kubeconfig file to my home directory
 
-=> download iam aws authenticator
+=> download iam aws authenticator, CLI, kubectl before kubeconfig configuration.
+
+5. terraform output kubeconfig > ~/.kube/config
 
 1. Install the AWS CLI on Linux
 
@@ -35,7 +37,5 @@ kubectl version --short --client
 curl -o aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/aws-iam-authenticator
 chmod +x ./aws-iam-authenticator &&  mkdir -p $HOME/bin && cp ./aws-iam-authenticator $HOME/bin/aws-iam-authenticator && export PATH=$PATH:$HOME/bin && echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc
 aws-iam-authenticator help
-
-5. terraform output kubeconfig > ~/.kube/config
 
 kubectl cluster-info
