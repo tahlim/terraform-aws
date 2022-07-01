@@ -11,7 +11,7 @@ See that guide for additional information.
 
 => now i am going to redirect kubeconfig file to my home directory
 
-* download iam aws authenticator
+=> download iam aws authenticator
 
 1. Install the AWS CLI on Linux
 
