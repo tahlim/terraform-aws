@@ -9,7 +9,7 @@ See that guide for additional information.
 3. terraform state list : this is the file that stores the resource information that has to be deployed
 4. terraform output kubeconfig
 
-=> download iam aws authenticator, CLI, kubectl before kubeconfig configuration.
+= Note: download iam aws authenticator, CLI, kubectl before kubeconfig configuration.
 
 ================================================
 
