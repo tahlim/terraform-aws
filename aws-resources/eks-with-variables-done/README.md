@@ -31,12 +31,12 @@ kubectl
 kubectl version --short --client
 
 # 3. Installing aws-iam-authenticator for eks
-- ## curl -o aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/aws-iam-authenticator
-- ## chmod +x ./aws-iam-authenticator &&  mkdir -p $HOME/bin && cp ./aws-iam-authenticator $HOME/bin/aws-iam-authenticator && export PATH=$PATH:$HOME/bin && echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc
-- ## aws-iam-authenticator help
+curl -o aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/aws-iam-authenticator
+chmod +x ./aws-iam-authenticator &&  mkdir -p $HOME/bin && cp ./aws-iam-authenticator $HOME/bin/aws-iam-authenticator && export PATH=$PATH:$HOME/bin && echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc
+aws-iam-authenticator help
 
-- ## kubectl cluster-info
+kubectl cluster-info
 
-- ## aws eks --region us-east-1 describe-cluster --name Dmat-onp-cluster --query cluster.status
-- ## aws eks --region us-east-1 update-kubeconfig --name Dmat-onp-cluster
-- ## kubectl get svc
+aws eks --region us-east-1 describe-cluster --name Dmat-onp-cluster --query cluster.status
+aws eks --region us-east-1 update-kubeconfig --name Dmat-onp-cluster
+kubectl get svc
